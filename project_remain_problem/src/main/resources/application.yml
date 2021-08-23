@@ -1,0 +1,29 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: PROJECT-REMAIN-PROBLEM
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///demo?serverTimezone=UTC
+      username: root
+      password: 23931106wode
+  cloud:
+    nacos:
+      discovery:
+      server-addr: 192.168.222.135:8848
+mybatis-plus:
+  mapper-locations: classpath:xml/*.xml
+logging:
+  level:
+    com: debug
+
+management:
+      # 端点检查（健康检查）
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

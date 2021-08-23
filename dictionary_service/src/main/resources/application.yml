@@ -1,0 +1,33 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: DICTIONARY-SERVICE
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///demo?serverTimezone=UTC
+      username: root
+      password: 23931106wode
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.222.138:10001
+  redis:
+    host: 192.168.222.138
+    port: 6379
+    database: 0
+  profiles:
+    active: dev
+mybatis-plus:
+  mapper-locations: classpath:xml/*.xml
+logging:
+  level:
+    com: debug
+management:
+  # 端点检查（健康检查）
+  endpoints:
+    web:
+      exposure:
+        include: "*"

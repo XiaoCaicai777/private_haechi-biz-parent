@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.it.biz.mapper.HcProjectRemainProblemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.it.biz.model.HcProjectRemainProblem">
+        <id column="id" property="id" />
+        <result column="project_id" property="projectId" />
+        <result column="project_code" property="projectCode" />
+        <result column="problem_code" property="problemCode" />
+        <result column="problem_name" property="problemName" />
+        <result column="problem_source" property="problemSource" />
+        <result column="risk_id" property="riskId" />
+        <result column="task_id" property="taskId" />
+        <result column="provide_man" property="provideMan" />
+        <result column="provide_time" property="provideTime" />
+        <result column="problen_grade" property="problenGrade" />
+        <result column="problem_type" property="problemType" />
+        <result column="plan_finish_time" property="planFinishTime" />
+        <result column="responsible_man" property="responsibleMan" />
+        <result column="problem_desc" property="problemDesc" />
+        <result column="scheme_desc" property="schemeDesc" />
+        <result column="problem_state" property="problemState" />
+        <result column="close_time" property="closeTime" />
+        <result column="remark" property="remark" />
+        <result column="lock_version" property="lockVersion" />
+        <result column="logic_del" property="logicDel" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+        <result column="tenant_id" property="tenantId" />
+    </resultMap>
+
+</mapper>
